@@ -1,0 +1,68 @@
+html {
+    background-color: black;
+}
+
+.container{
+    width: 1400px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: grey;
+}
+
+.first-spot{
+    width: 49.5%;
+    height: 100%;
+    
+    overflow:hidden;
+    float: left;
+    position:relative;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+}
+.first-spot .box{
+    
+    display:none;
+    position:absolute;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://www.aaanything.net/wp-content/uploads/2013/06/700x700xMajestic_white_Siberian_tiger-700x700.jpeg.pagespeed.ic.IQl2gYIARu.jpg");
+    background-size: 100% 100%;
+}
+
+.first-spot .content{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    background-color: white;
+}
+
+.second-spot{
+    width: 50%;
+    height: 50%;
+    background-image: url("https://tacosanddinosaurs.files.wordpress.com/2015/01/cat-2.jpg?w=700&h=350");
+    float: right;
+}
+
+.third-spot{
+    width: 25%;
+    height: 50%;
+    background-color: blue;
+    background-image: url("http://images.sodahead.com/polls/001088197/SWEET_CAT_by_uahomche_answer_1_xlarge.jpeg");
+    
+    float: right;
+}
+
+.fourth-spot{
+    width: 25%;
+    height: 50%;
+    background-color: yellow;
+    background-image: url("http://f1.bcbits.com/img/a1382127514_10.jpg");
+    
+    float: right;
+}
+
+.hidden div{
+    opacity: 0.5;
+}
