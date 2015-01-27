@@ -67,19 +67,50 @@ html {
 .third-spot{
     width: 25%;
     height: 50%;
-    background-color: blue;
-    background-image: url("http://images.sodahead.com/polls/001088197/SWEET_CAT_by_uahomche_answer_1_xlarge.jpeg");
     
     float: right;
+    
+    overflow:hidden;
+    position:relative;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
 }
+
+.third-spot .box{
+    
+    display:none;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://images.sodahead.com/polls/001088197/SWEET_CAT_by_uahomche_answer_1_xlarge.jpeg");
+    background-size: 100% 100%;
+}
+
 
 .fourth-spot{
     width: 25%;
     height: 50%;
-    background-color: yellow;
-    background-image: url("http://f1.bcbits.com/img/a1382127514_10.jpg");
     
     float: right;
+    
+    overflow:hidden;
+    position:relative;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.fourth-spot .box{
+    
+    display:none;
+    position:absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://f1.bcbits.com/img/a1382127514_10.jpg");
+    background-size: 100% 100%;
 }
 
 .hidden div{
@@ -101,4 +132,20 @@ html {
     width: 100%;
     height: 100%;
     background-color: blue;
+}
+#third-slider{
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+#fourth-slider{
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
 }
