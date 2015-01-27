@@ -1,5 +1,24 @@
+
+
 $(document).ready(function() {
 
+    $(window).on('resize', function(){
+        var pageHeight = $(window).height();
+    var pageWidth = $(window).width();
+    if(pageWidth > 2000) {
+        pageWidth = 2000;
+    }
+    $('.container').css('width',pageWidth*9/10)
+    $('.container').css('height',(pageWidth/2)*9/10)
+    });
+    var pageHeight = $(window).height();
+    var pageWidth = $(window).width();
+    if(pageWidth > 2000) {
+        pageWidth = 2000;
+    }
+    $('.container').css('width',pageWidth*9/10)
+    $('.container').css('height',(pageWidth/2)*9/10)
+    
 
     var sliderRight = $('.container').width();
     $('#first-slider').css('right', sliderRight);
@@ -38,6 +57,8 @@ $(document).ready(function() {
     $(".fourth-spot .box").animate({
         left: 0
     }, 200, "linear", function() {});
+    
+    $('.first-spot .content').toggle('slow');
 
 
 

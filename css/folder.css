@@ -5,7 +5,7 @@ html {
 .container{
     width: 1400px;
     height: 700px;
-    margin: 100px auto;
+    margin: 10px auto;
     background-color: grey;
     overflow:hidden;
     position: relative;
@@ -34,7 +34,9 @@ html {
 }
 
 .first-spot .content{
+    display:none;
     position: absolute;
+    width: 50%;
     top: 10%;
     left: 30%;
     background-color: white;
