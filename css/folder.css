@@ -41,10 +41,27 @@ html {
 }
 
 .second-spot{
-    width: 50%;
+    width: 49.5%;
     height: 50%;
-    background-image: url("https://tacosanddinosaurs.files.wordpress.com/2015/01/cat-2.jpg?w=700&h=350");
+    
     float: right;
+    
+    overflow:hidden;
+    position:relative;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.second-spot .box{
+    
+    display:none;
+    position:absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://tacosanddinosaurs.files.wordpress.com/2015/01/cat-2.jpg?w=700&h=350");
+    background-size: 100% 100%;
 }
 
 .third-spot{
@@ -76,4 +93,12 @@ html {
     width: 100%;
     height: 100%;
     background-color: red;
+}
+#second-slider{
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
 }
