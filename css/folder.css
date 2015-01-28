@@ -9,61 +9,89 @@ html {
     background-color: grey;
     overflow:hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .first-spot{
-    width: 49.5%;
+    width: 50%;
     height: 100%;
     
     overflow:hidden;
     float: left;
     position:relative;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: black;
 }
 .first-spot .box{
-    
+    border: 1px solid black;
     display:none;
     position:absolute;
-    left: 100px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("http://www.aaanything.net/wp-content/uploads/2013/06/700x700xMajestic_white_Siberian_tiger-700x700.jpeg.pagespeed.ic.IQl2gYIARu.jpg");
+    background-image: url("/images/white-siberian.jpg");
     background-size: 100% 100%;
+}
+
+.first-spot .hidden-box{
+    border: 1px solid black;
+    position:absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/white-siberian.jpg");
+    background-size: 100% 100%;
+    opacity: 0.3;
 }
 
 .first-spot .content{
     display:none;
     position: absolute;
     width: 50%;
-    top: 10%;
-    left: 30%;
+    bottom: 10%;
+    left: 40%;
     background-color: white;
+    padding: 10px;
 }
 
+
 .second-spot{
-    width: 49.5%;
+    width: 50%;
     height: 50%;
     
     float: right;
     
     overflow:hidden;
     position:relative;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: black;
 }
 
 .second-spot .box{
-    
-    display:none;
     position:absolute;
     right: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("https://tacosanddinosaurs.files.wordpress.com/2015/01/cat-2.jpg?w=700&h=350");
+    background-image: url("/images/red-siberian.jpg");
     background-size: 100% 100%;
+    border: 1px solid black;
+}
+
+.second-spot .hidden-box{
+    position:absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/red-siberian.jpg");
+    background-size: 100% 100%;
+    border: 1px solid black;
+    opacity: 0.3;
+}
+
+.second-spot .content{
+    display:none;
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
 }
 
 .third-spot{
@@ -74,20 +102,39 @@ html {
     
     overflow:hidden;
     position:relative;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: black;
+    
 }
 
 .third-spot .box{
-    
+    border: 1px solid black;
     display:none;
     position:absolute;
     bottom: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("http://images.sodahead.com/polls/001088197/SWEET_CAT_by_uahomche_answer_1_xlarge.jpeg");
+    background-image: url("/images/small-cat.jpeg");
     background-size: 100% 100%;
+}
+
+.third-spot .hidden-box{
+    border: 1px solid black;
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/small-cat.jpeg");
+    background-size: 100% 100%;
+    opacity: 0.3;
+}
+
+.third-spot .content{
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    display:none;
 }
 
 
@@ -99,20 +146,39 @@ html {
     
     overflow:hidden;
     position:relative;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: black;
 }
 
 .fourth-spot .box{
-    
-    display:none;
+
     position:absolute;
     left: 0px;
     width: 100%;
     height: 100%;
-    background-image: url("http://f1.bcbits.com/img/a1382127514_10.jpg");
+    background-image: url("/images/snow-cat.jpg");
     background-size: 100% 100%;
+    border: 1px solid black;
+}
+
+.fourth-spot .hidden-box{
+    position:absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/snow-cat.jpg");
+    background-size: 100% 100%;
+    border: 1px solid black;
+    opacity: 0.3;
+}
+
+.fourth-spot .content{
+    
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    display:none;
 }
 
 .hidden div{
@@ -125,7 +191,17 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-image: url("/images/tigers.jpg");
+    background-size: 100% 100%;
+}
+#first-slider-content{
+    top: 70%;
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
 #second-slider{
     right: 0px;
@@ -133,7 +209,17 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-image: url("/images/siberians.jpg");
+    background-size: 100% 100%;
+}
+#second-slider-content{
+    top: 70%;
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
 #third-slider{
     right: 0px;
@@ -141,7 +227,17 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: yellow;
+    background-image: url("/images/kittens.jpg");
+    background-size: 100% 100%;
+}
+#third-slider-content{
+    top: 70%;
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
 #fourth-slider{
     right: 0px;
@@ -149,5 +245,15 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-image: url("/images/Pallas_cat.JPG");
+    background-size: 100% 100%;
+}
+#fourth-slider-content{
+    top: 70%;
+    right: 0px;
+    display:none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
 }
