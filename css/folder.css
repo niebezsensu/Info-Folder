@@ -22,7 +22,6 @@ html {
 }
 .first-spot .box{
     border: 1px solid black;
-    display:none;
     position:absolute;
     left: 0px;
     width: 100%;
