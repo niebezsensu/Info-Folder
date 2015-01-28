@@ -45,9 +45,9 @@ html {
 .first-spot .content{
     display:none;
     position: absolute;
-    width: 50%;
-    bottom: 10%;
-    left: 40%;
+    width: 80%;
+    bottom: 1%;
+    left: 10%;
     background-color: white;
     padding: 10px;
 }
@@ -87,9 +87,9 @@ html {
 .second-spot .content{
     display:none;
     position: absolute;
-    width: 50%;
-    bottom: 10%;
-    left: 40%;
+    width: 32%;
+    top: 2%;
+    left: 1%;
     background-color: white;
     padding: 10px;
 }
@@ -129,9 +129,9 @@ html {
 
 .third-spot .content{
     position: absolute;
-    width: 50%;
-    bottom: 10%;
-    left: 40%;
+    width: 19%;
+    bottom: 3%;
+    left: 3%;
     background-color: white;
     padding: 10px;
     display:none;
@@ -173,9 +173,9 @@ html {
 .fourth-spot .content{
     
     position: absolute;
-    width: 50%;
-    bottom: 10%;
-    left: 40%;
+    width: 88%;
+    bottom: 1%;
+    left: 2%;
     background-color: white;
     padding: 10px;
     display:none;
@@ -200,7 +200,7 @@ html {
     display:none;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: white;
 }
 #second-slider{
@@ -218,7 +218,7 @@ html {
     display:none;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 115px;
     background-color: white;
 }
 #third-slider{
